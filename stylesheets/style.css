@@ -98,10 +98,10 @@ body {
     color: var(--clr-neutral-white);
 }
 
-.image-section-1 { background-image: url(../assets/images/item1.svg); }
+/* .image-section-1 { background-image: url(../assets/images/item1.svg); }
 .image-section-2 { background-image: url(../assets/images/item2.svg); }
 .image-section-3 { background-image: url(../assets/images/item3.svg); }
-.image-section-4 { background-image: url(../assets/images/item4-big.svg); }
+.image-section-4 { background-image: url(../assets/images/item4-big.svg); } */
 
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-light { background-color: var(--clr-neutral-white); }
@@ -184,7 +184,7 @@ body {
     padding: 6rem 1rem;
 }
 
-.main-section__image {
+/* .main-section__image {
     height: 400px;
     width: 670px;
 
@@ -193,7 +193,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .main-section__content {
     flex-basis: 33ch;

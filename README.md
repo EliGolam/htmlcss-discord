@@ -53,3 +53,14 @@ Certain graphical elements missing
 Footer needs proper layout   
 Add Wave Background  
 Add Download Symbol  
+
+### V2.3
+
+Moved images from CSS to HTML for simplicity
+
+#### Problems: 
+
+Certain graphical elements missing  
+Footer needs proper layout   
+Add Wave Background  
+Add Download Symbol 
