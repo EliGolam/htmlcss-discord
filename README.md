@@ -2,6 +2,19 @@
 
 Boolean Exercise (12/07/2022): Discord Main Page Clone
 
-## V1.0
+## Versions
+### V1.0
 
 **Imported** functional *HTML* and *CSS* from htmlcss-discord-struttura
+
+### V1.1
+
+Imported assets
+
+#### Problems: 
+
+Certain graphical elements missing
+Footer needs proper layout
+Clean up HTML
+Add Wave Background
+Add Download Symbol
