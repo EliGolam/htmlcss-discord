@@ -241,6 +241,16 @@ body {
     justify-content: space-between;
 }
 
+#page-lang {
+    align-items: center;
+    column-gap: 1ch;
+}
+
+.lang-icon {
+    max-width: 3ch;
+    height: 2ch;
+}
+
 /* EXCEPTIONS: variations to a block */
 #call-to-action-section-prompt {
     padding: 2rem 3rem;
