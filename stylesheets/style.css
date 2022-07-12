@@ -1,0 +1,250 @@
+/* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
+/* These are some generic design choices for colour schemes, fonts and backgrounds */
+:root {
+    /* Website Color Scheme */
+    --clr-primary: rgb(37, 119, 212);
+    --clr-secondary: rgba(88, 101, 242, 1);
+
+    --clr-neutral-white: rgba(246, 242, 233, 1);
+    --clr-neutral-black: rgba(35, 39, 42, 1);
+    --clr-neutral-black-transparent: rgba(25, 25, 25, 0.3);
+    --clr-neutral-grey: rgb(245, 248, 250);
+
+    /* Website Fonts */
+    --fontfamily-primary: 'Roboto', Arial, Helvetica, sans-serif;
+
+    --fontweight-thin: 300;
+    --fontweight-normal: 400;
+    --fontweight-heavy: 700;
+    --fontweight-bold: 900;
+
+    --fontsize-small: .9rem;
+    --fontsize-normal: 1.2rem;
+    --fontsize-large: 2.7rem;
+    --fontsize-title: 4rem;
+
+    --side-margin: 350px;
+    --content-width: 1180px;
+    --flow-spacer: 1rem;
+}
+
+body {
+    font-family: var(--fontfamily-primary);
+    font-size: var(--fontsize-normal);
+    font-weight: var(--fontweight-normal);
+}
+
+.hidden-content {
+    display: none;
+}
+
+/* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
+/* Page Layout choices */
+.flex { display: flex; }
+
+.column { flex-direction: column; }
+
+.row-reverse { flex-direction: row-reverse; }
+
+.flex-wrap { flex-wrap: wrap; }
+
+.content-width { max-width: var(--content-width); margin: 0 auto; padding: 0 1rem;}
+
+.flow > * { margin-top: 1rem; }
+
+/* Component Layout choices */
+/* HEADER */
+.page-header { 
+    min-height: 650px;
+    padding: .5rem 0;
+
+    background-image: url(../assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* MAIN-CONTAINER */
+
+/* FOOTER */
+.footer-container {
+    justify-content: space-between;
+}
+
+/* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+.ui-button {
+    padding: .5rem 1.5rem;
+    border: 2px solid var(--clr-neutral-white);
+    background-color: var(--clr-neutral-white);
+
+    border-radius: 15rem;
+}
+
+.ui-button:hover {
+    color: var(--clr-primary);
+    box-shadow: 2px 5px 8px 3px var(--clr-neutral-black-transparent);
+}
+
+.header-button {
+    margin: 2rem 1rem;
+}
+
+.open-web-discord {
+    border: var(--clr-neutral-black);
+}
+
+.open-web-discord:hover {
+    border: var(--clr-neutral-black-transparent);
+    background-color: var(--clr-neutral-black-transparent);
+    color: var(--clr-neutral-white);
+}
+
+.image-section-1 { background-image: url(../assets/images/section-1.svg); }
+.image-section-2 { background-image: url(../assets/images/section-2.svg); }
+.image-section-3 { background-image: url(../assets/images/section-3.svg); }
+.image-section-4 { background-image: url(../assets/images/section-4.svg); }
+
+/* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
+.background-light { background-color: var(--clr-neutral-white); }
+
+.background-dark { background-color: var(--clr-neutral-black); }
+
+.background-grey { background-color: var(--clr-neutral-grey); }
+
+.background-primary { background-color: var(--clr-primary);}
+
+.background-secondary { background-color: var(--clr-secondary);}
+
+.text-colour-dark {color: var(--clr-neutral-black);}
+
+.text-colour-light {color: var(--clr-neutral-white);}
+
+/* BLOCKS: component specific rules */
+/* HEADER */
+.navigation {
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: var(--fontsize-small);
+}
+
+.discord-logo {
+    min-width: 120px;
+}
+
+.navigation__links {
+    /* as flex-item */
+    flex-grow: 3;
+    max-width: 500px;
+
+    /* as flex-container */
+    justify-content: space-between;
+}
+
+.navigation__links a {
+    color: var(--clr-neutral-white);
+}
+
+.navigation__links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.header__info {
+    max-width: 75ch;
+    margin: 3rem auto 0rem;
+    padding: 3rem 0;
+    
+    text-align: center;
+}
+
+#page-title {
+    font-size: var(--fontsize-title);
+    font-weight: var(--fontweight-bold);
+}
+
+
+/* MAIN CONTAINER */
+.main-container .main-section:nth-child(odd) { background-color: var(--clr-neutral-grey);}
+
+.main-section .flex {
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 70vh;
+}
+
+.download-section .main-section__content {
+    flex-basis: 15rem;
+    text-align: center;
+
+    max-width: 65ch;
+}
+
+.download-section {
+    padding: 6rem 1rem;
+}
+
+.main-section__image {
+    height: 400px;
+    width: 670px;
+
+    flex-grow: 2;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-section__content {
+    flex-basis: 33ch;
+    font-weight: var(--fontweight-thin);
+}
+
+.main-section__content h3 {
+    font-size: var(--fontsize-large);
+    font-weight: var(--fontweight-heavy);
+    line-height: 1.25;
+}
+
+/* FOOTER */
+.page-footer {
+    padding: 3rem 1rem;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-thin);
+}
+
+
+.page-footer h3 {
+    font-weight: var(--fontweight-thin);
+    color: var(--clr-secondary);
+}
+
+.footer-info {
+    flex-basis: 35%;
+}
+
+.footer-info h3 {
+    font-size: var(--fontsize-large);
+    font-weight: var(--fontweight-heavy);
+}
+
+.bottom-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid var(--clr-secondary);
+
+    justify-content: space-between;
+}
+
+/* EXCEPTIONS: variations to a block */
+#bottom-download-prompt {
+    padding: 2rem 3rem;
+    background-image: url(../assets/images/sparkles.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width:700px) {
+  
+}
