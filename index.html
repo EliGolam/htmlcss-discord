@@ -27,6 +27,7 @@ Logical choice to make things look more organized, but they are not fundamental 
 
 <!-- BODY -->
 <body>
+
     <!-- PAGE HEADER - with hero background image -->
     <header class="page-header background-primary text-colour-light">
 
@@ -58,6 +59,7 @@ Logical choice to make things look more organized, but they are not fundamental 
             <button class="open-web-discord  header-button ui-button background-dark text-colour-light">Apri Discord nel tuo browser</button>
         </section>
     </header>
+    <!-- end HEADER -->
 
     <!-- Main container: Flex Column, with 4  rows and images -->
     <main class="main-container flow">
@@ -106,65 +108,78 @@ Logical choice to make things look more organized, but they are not fundamental 
 
     <!-- FOOTER: 2 sections - one Flex-container with the list of links and one Flex-container with Discord Logo and a Sign-up button -->
     <footer class="page-footer background-dark text-colour-light">
+        
+        <!-- Hidden footer title for accessibility -->
         <h2 class="hidden-content">Link di navigazione fine pagina</h2>
-        <div class="footer-container  content-width flex flex-wrap flow">
+
+        <!-- Footer-container: flex with links -->
+        <div class="footer-container   flex flex-wrap   content-width flow">
             <section class="footer-info">
                 <h3>Il tuo posto per parlare</h3>
                 <p id="page-lang">Italiano</p>
                 <div class="social-links"></div>
             </section>
-            <section>
-                <h3>Prodotto</h3>
-                <ul>
-                    <li>Scarica</li>
-                    <li>Perché Discord</li>
-                    <li>Nitro</li>
-                    <li>Sicurezza</li>   
-                    <li>Assistenza</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Compagnia</h3>
-                <ul>
-                    <li>Chi Siamo</li>
-                    <li>Lavora con noi</li>
-                    <li>Marchio</li>
-                    <li>Redazione</li>
-                    <li>Negozio</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Risorse</h3>
-                <ul>
-                    <li>Scarica</li>
-                    <li>Perché Discord</li>
-                    <li>Nitro</li>
-                    <li>Sicurezza</li>   
-                    <li>Assistenza</li>
-                    <li>Scarica</li>
-                    <li>Perché Discord</li>
-                    <li>Nitro</li>
-                    <li>Sicurezza</li>   
-                    <li>Assistenza</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Norma</h3>
-                <ul>
-                    <li>Scarica</li>
-                    <li>Perché Discord</li>
-                    <li>Nitro</li>
-                    <li>Sicurezza</li>   
-                    <li>Assistenza</li>
-                </ul>
-            </section>
-        </div>
 
-        <div class="bottom-section flex content-width">
-            <a href="https://discord.com/" target="_blank"><img src="./assets/images/logo.svg" alt="Discord Logo" class="discord-logo" /></a> 
-            <button class="login  ui-button" type="button">Registrati</button>
+            <!-- footer-container__links -->
+            <div class="footer-container__links   flex flex-wrap">
+                <section>
+                    <h3>Prodotto</h3>
+                    <ul>
+                        <li>Scarica</li>
+                        <li>Perché Discord</li>
+                        <li>Nitro</li>
+                        <li>Sicurezza</li>   
+                        <li>Assistenza</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Compagnia</h3>
+                    <ul>
+                        <li>Chi Siamo</li>
+                        <li>Lavora con noi</li>
+                        <li>Marchio</li>
+                        <li>Redazione</li>
+                        <li>Negozio</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Risorse</h3>
+                    <ul>
+                        <li>Scarica</li>
+                        <li>Perché Discord</li>
+                        <li>Nitro</li>
+                        <li>Sicurezza</li>   
+                        <li>Assistenza</li>
+                        <li>Scarica</li>
+                        <li>Perché Discord</li>
+                        <li>Nitro</li>
+                        <li>Sicurezza</li>   
+                        <li>Assistenza</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Norma</h3>
+                    <ul>
+                        <li>Scarica</li>
+                        <li>Perché Discord</li>
+                        <li>Nitro</li>
+                        <li>Sicurezza</li>   
+                        <li>Assistenza</li>
+                    </ul>
+                </section>
+            </div>
+            <!-- end footer-container__links -->
         </div>
+        <!-- end Footer-container -->
+
+        <!-- footer-bottom -->
+        <div class="footer-bottom   flex   content-width">
+            <a href="https://discord.com/"  class="discord-logo"  target="_blank"><img src="./assets/images/logo.svg" alt="Discord Logo" /></a> 
+            <button class="sign-up  ui-button" type="button">Registrati</button>
+        </div>
+        <!-- footer-bottom -->
     </footer>
+    <!-- end FOOTER -->
 </body>
 
 </html>

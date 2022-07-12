@@ -220,7 +220,7 @@ body {
 }
 
 .footer-info {
-    flex-basis: 35%;
+    flex-grow: 1;
 }
 
 .footer-info h3 {
@@ -228,7 +228,12 @@ body {
     font-weight: var(--fontweight-heavy);
 }
 
-.bottom-section {
+.footer-container__links {
+    flex-grow: 3;
+    justify-content: space-between;
+}
+
+.footer-bottom {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 2px solid var(--clr-secondary);

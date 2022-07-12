@@ -18,3 +18,15 @@ Footer needs proper layout
 Clean up HTML
 Add Wave Background
 Add Download Symbol
+
+### V2.0
+
+Partiall cleaned HTML and CSS
+
+#### Problems: 
+
+Certain graphical elements missing
+Footer needs proper layout
+Clean up HTML
+Add Wave Background
+Add Download Symbol
