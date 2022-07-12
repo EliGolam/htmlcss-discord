@@ -42,3 +42,14 @@ Footer needs proper layout
 Clean up HTML  
 Add Wave Background  
 Add Download Symbol  
+
+### V2.2
+
+Additional Code Cleanup
+
+#### Problems: 
+
+Certain graphical elements missing  
+Footer needs proper layout   
+Add Wave Background  
+Add Download Symbol  

@@ -173,14 +173,14 @@ body {
     min-height: 70vh;
 }
 
-.download-section .main-section__content {
+.call-to-action-section .main-section__content {
     flex-basis: 15rem;
     text-align: center;
 
     max-width: 65ch;
 }
 
-.download-section {
+.call-to-action-section {
     padding: 6rem 1rem;
 }
 
@@ -242,7 +242,7 @@ body {
 }
 
 /* EXCEPTIONS: variations to a block */
-#bottom-download-prompt {
+#call-to-action-section-prompt {
     padding: 2rem 3rem;
     background-image: url(../assets/images/stars.svg);
     background-size: contain;

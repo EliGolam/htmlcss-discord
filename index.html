@@ -29,15 +29,15 @@ Logical choice to make things look more organized, but they are not fundamental 
 <body>
 
     <!-- PAGE HEADER - with hero background image -->
-    <header class="page-header background-primary text-colour-light">
+    <header class="page-header   background-primary text-colour-light">
 
         <!-- Top NAVIGATION bar: containers Discord-Logo (clickable), inline links and a login button -->
-        <nav class="navigation flex content-width flow"> <!-- Flex Row with nowrap -->
+        <nav class="navigation   flex   content-width flow"> <!-- Flex Row with nowrap -->
             <!-- Discord Clickable Logo aligned to the left -->
             <a href="https://discord.com/" target="_blank"><img src="./assets/images/logo.svg" alt="Discord Logo" class="discord-logo" /></a> 
             
             <!-- 5 Clickable links -->
-            <ul class="navigation__links flex">
+            <ul class="navigation__links   flex">
                 <li><a href="https://discord.com/download" target="_blank">Scarica</a></li>
                 <li><a href="https://discord.com/blog" target="_blank">Perché Discord</a></li>
                 <li><a href="https://discord.com/nitro" target="_blank">Nitro</a></li>
@@ -61,38 +61,43 @@ Logical choice to make things look more organized, but they are not fundamental 
     </header>
     <!-- end HEADER -->
 
-    <!-- Main container: Flex Column, with 4  rows and images -->
+    <!-- MAIN container: Flex Column, with 4  rows and images -->
     <main class="main-container   flow">
+
+        <!-- Hidden main title for accessibility -->
         <h2 class="hidden-content">Caratteristiche di Discord</h2>
+
         <!-- Four main sections with flex: first three are row, the last is column -->
-        <section class="main-section">
+        <!-- The additional div is used to allow for the main section to have a background that expands for the entire page in width, regardless of content -->
+        <section class="main-section   flex-wrap">
             <div class="flex content-width">
-                <div class="main-section__image  image-section-1"></div>
+                <div class="main-section__image   image-section-1"></div>
                 <div class="main-section__content flow">
                     <h3>Un luogo a invito con tutto lo spazio necessario per parlare</h3>
                     <p>I server Discord sono organizzati in canali tematici in cui puoi collaborare, condividere o semplicemente parlare della tua giornata senza intasare una chat di gruppo.</p>
                 </div>       
             </div>        
         </section>
-        <section class="main-section">
-            <div class="flex row-reverse content-width">
-                <div class="main-section__image  image-section-2"></div>
+        <section class="main-section   flex-wrap">
+            <div class="flex row-reverse   content-width">
+                <div class="main-section__image   image-section-2"></div>
                 <div class="main-section__content flow">
                     <h3>Dove trovarsi è facile</h3>
                     <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici nel tuo server possono vedere che sei lì e unirsi istantaneamente senza dover chiamare.</p>
                 </div>       
             </div>        
         </section>
-        <section class="main-section">
+        <section class="main-section   flex-wrap">
             <div class="flex content-width">
-                <div class="main-section__image  image-section-3"></div>
+                <div class="main-section__image   image-section-3"></div>
                 <div class="main-section__content flow">
                     <h3>Da pochi a un fandom</h3>
                     <p>Dai inizio a una community con strumenti di moderazione e accesso ai membri personalizzabile. Concedi ai membri poteri speciali, crea canali privati e molto altro.</p>
                 </div>       
             </div>        
         </section>
-        <section class="main-section download-section flow">
+        <!-- Special call-to-action-section with flex columns and additional compoments -->
+        <section class="main-section call-to-action-section   flow">
             <div class="flex column content-width">
                 <div class="main-section__content flow">
                     <h3>Tecnologia affidabile per tenersi in contatto</h3>
@@ -100,12 +105,14 @@ Logical choice to make things look more organized, but they are not fundamental 
                 </div> 
      
                 <div class="main-section__image  image-section-4"></div>
-                <p id="bottom-download-prompt">Pronto a iniziare la tua avventura?</p>
+
+                <p id="call-to-action-section-prompt">Pronto a iniziare la tua avventura?</p>
                 <button class="download-button  header-button ui-button">Scarica per Mac</button>      
             </div>
         </section>
+        <!-- end of the 4 Main-sections -->
     </main>
-    <!-- end Main container -->
+    <!-- end MAIN -->
 
     <!-- FOOTER: 2 sections - one Flex-container with the list of links and one Flex-container with Discord Logo and a Sign-up button -->
     <footer class="page-footer background-dark text-colour-light">
