@@ -34,9 +34,7 @@ body {
     font-weight: var(--fontweight-normal);
 }
 
-.hidden-content {
-    display: none;
-}
+.hidden-content { display: none; }
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Page Layout choices */
@@ -52,24 +50,6 @@ body {
 
 .flow > * { margin-top: 1rem; }
 
-/* Component Layout choices */
-/* HEADER */
-.page-header { 
-    min-height: 650px;
-    padding: .5rem 0;
-
-    background-image: url(../assets/images/hero-bg.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* MAIN-CONTAINER */
-
-/* FOOTER */
-.footer-container {
-    justify-content: space-between;
-}
-
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
 .ui-button {
     padding: .5rem 1.5rem;
@@ -84,9 +64,9 @@ body {
     box-shadow: 2px 5px 8px 3px var(--clr-neutral-black-transparent);
 }
 
-.header-button {
-    margin: 2rem 1rem;
-}
+.header-button { margin: 2rem 1rem; }
+
+.call-to-action-section .header-button { margin: 2rem auto; }
 
 .open-web-discord {
     border: var(--clr-neutral-black);
@@ -120,6 +100,15 @@ body {
 
 /* BLOCKS: component specific rules */
 /* HEADER */
+.page-header { 
+    min-height: 650px;
+    padding: .5rem 0;
+
+    background-image: url(../assets/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 .navigation {
     justify-content: space-between;
     align-items: center;
@@ -135,14 +124,13 @@ body {
     /* as flex-item */
     flex-grow: 3;
     max-width: 500px;
+    margin-inline: 1rem;
 
     /* as flex-container */
     justify-content: space-between;
 }
 
-.navigation__links a {
-    color: var(--clr-neutral-white);
-}
+.navigation__links a { color: var(--clr-neutral-white); }
 
 .navigation__links a:hover {
     text-decoration: underline;
@@ -173,6 +161,21 @@ body {
     min-height: 70vh;
 }
 
+.main-section__content {
+    flex-basis: 33ch;
+    font-weight: var(--fontweight-thin);
+}
+
+.main-section__content h3 {
+    font-size: var(--fontsize-large);
+    font-weight: var(--fontweight-heavy);
+    line-height: 1.25;
+}
+
+.call-to-action-section {
+    padding: 6rem 1rem;
+}
+
 .call-to-action-section .main-section__content {
     flex-basis: 15rem;
     text-align: center;
@@ -180,8 +183,11 @@ body {
     max-width: 65ch;
 }
 
-.call-to-action-section {
-    padding: 6rem 1rem;
+#call-to-action-section-prompt {
+    padding: 2rem 3rem;
+    background-image: url(../assets/images/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* .main-section__image {
@@ -195,18 +201,12 @@ body {
     background-position: center;
 } */
 
-.main-section__content {
-    flex-basis: 33ch;
-    font-weight: var(--fontweight-thin);
-}
-
-.main-section__content h3 {
-    font-size: var(--fontsize-large);
-    font-weight: var(--fontweight-heavy);
-    line-height: 1.25;
-}
 
 /* FOOTER */
+.footer-container {
+    justify-content: space-between;
+}
+
 .page-footer {
     padding: 3rem 1rem;
     font-size: var(--fontsize-small);
@@ -249,14 +249,6 @@ body {
 .lang-icon {
     max-width: 3ch;
     height: 2ch;
-}
-
-/* EXCEPTIONS: variations to a block */
-#call-to-action-section-prompt {
-    padding: 2rem 3rem;
-    background-image: url(../assets/images/stars.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 /* MEDIA QUERIES */

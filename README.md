@@ -64,3 +64,14 @@ Certain graphical elements missing
 Footer needs proper layout   
 Add Wave Background  
 Add Download Symbol 
+
+### V2.4
+
+Footer layout completed  
+Cleaned CSS code
+
+#### Problems: 
+
+FontAwesome icons missing 
+Add Wave Background  
+Add Download Symbol 
