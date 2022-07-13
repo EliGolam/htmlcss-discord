@@ -100,3 +100,15 @@ Added background wave
 ### V3.1
 
 Fixed bottom download button
+
+### V3.2
+
+Fixed wave background
+
+### V3.3
+
+Fixed spacing
+
+#### Known Issues:
+
+Clean up HTML and CSS to make svg elements more scalable and adaptive

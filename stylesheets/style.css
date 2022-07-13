@@ -94,6 +94,10 @@ body {
     color: var(--clr-neutral-white);
 }
 
+.grey-wave-bg {
+    fill: var(--clr-neutral-grey) !important;
+}
+
 /* .image-section-1 { background-image: url(../assets/images/item1.svg); }
 .image-section-2 { background-image: url(../assets/images/item2.svg); }
 .image-section-3 { background-image: url(../assets/images/item3.svg); }
