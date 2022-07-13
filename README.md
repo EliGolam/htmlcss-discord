@@ -84,3 +84,11 @@ Added Download Symbol
 #### Problems: 
 
 Add Wave Background  
+
+### V2.6
+
+Fixed wrapping issue of main-section
+
+#### Problems: 
+
+Add Wave Background  
