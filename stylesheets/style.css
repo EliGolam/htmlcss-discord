@@ -195,7 +195,7 @@ body {
     line-height: 1.25;
 }
 
-.call-to-action-section > flex {
+.call-to-action-section > .flex {
     padding: 6rem 1rem;
 }
 
@@ -208,6 +208,12 @@ body {
 
 .call-to-action-section > img {
     margin-top: 0;
+}
+
+.call-to-action-section .download-button:hover {
+    border-color: var(--clr-neutral-black);
+    background-color: var(--clr-neutral-black);
+    color: var(--clr-neutral-white);
 }
 
 #call-to-action-section-prompt {

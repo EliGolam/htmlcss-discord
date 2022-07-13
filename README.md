@@ -96,3 +96,7 @@ Add Wave Background
 ### V3.0
 
 Added background wave
+
+### V3.1
+
+Fixed bottom download button
