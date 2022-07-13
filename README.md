@@ -92,3 +92,7 @@ Fixed wrapping issue of main-section
 #### Problems: 
 
 Add Wave Background  
+
+### V3.0
+
+Added background wave
