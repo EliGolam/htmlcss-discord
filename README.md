@@ -75,3 +75,12 @@ Cleaned CSS code
 FontAwesome icons missing 
 Add Wave Background  
 Add Download Symbol 
+
+### V2.5
+
+Added Font Awesome Icons  
+Added Download Symbol
+
+#### Problems: 
+
+Add Wave Background  
